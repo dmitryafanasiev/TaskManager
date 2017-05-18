@@ -33,8 +33,8 @@ class TMTaskDetailsViewModel: ControllerViewModel {
                 task = TMTask.newTask()
             }
             task?.name = name
-            task?.currentState = status
             task?.persentsOfCompletion = progress
+            task?.currentState = status
             task?.dueDate = dueDate
             
             AppDelegate.sharedDelegate.saveContext()
