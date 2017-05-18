@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="dHp-A2-daJ" customClass="TMProjectCell" customModule="TaskManager" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="100"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="100"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9kJ-Hl-wbd">
+                        <rect key="frame" x="10" y="10" width="300" height="80"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Project Name" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumFontSize="13" translatesAutoresizingMaskIntoConstraints="NO" id="K0D-Wv-zwt">
+                                <rect key="frame" x="5" y="20" width="290" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="tasks count:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6AI-mu-n9C">
+                                <rect key="frame" x="20" y="50.5" width="260" height="14.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <color key="textColor" red="0.28235294117647058" green="0.27843137254901962" blue="0.27058823529411763" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.96078431372549022" green="0.96078431372549022" blue="0.96078431372549022" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="K0D-Wv-zwt" firstAttribute="centerY" secondItem="9kJ-Hl-wbd" secondAttribute="centerY" constant="-10" id="7yL-hq-Low"/>
+                            <constraint firstItem="K0D-Wv-zwt" firstAttribute="leading" secondItem="9kJ-Hl-wbd" secondAttribute="leading" constant="5" id="Bcc-sj-UDM"/>
+                            <constraint firstAttribute="trailing" secondItem="6AI-mu-n9C" secondAttribute="trailing" constant="20" id="CVH-Og-lUV"/>
+                            <constraint firstItem="6AI-mu-n9C" firstAttribute="top" secondItem="K0D-Wv-zwt" secondAttribute="bottom" constant="10" id="bpG-zb-hse"/>
+                            <constraint firstItem="6AI-mu-n9C" firstAttribute="leading" secondItem="9kJ-Hl-wbd" secondAttribute="leading" constant="20" id="dJh-XO-Ywe"/>
+                            <constraint firstAttribute="trailing" secondItem="K0D-Wv-zwt" secondAttribute="trailing" constant="5" id="drP-AX-0Og"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="9kJ-Hl-wbd" secondAttribute="bottom" constant="10" id="3X8-fB-j7N"/>
+                <constraint firstAttribute="trailing" secondItem="9kJ-Hl-wbd" secondAttribute="trailing" constant="10" id="9lT-Lk-gyN"/>
+                <constraint firstItem="9kJ-Hl-wbd" firstAttribute="leading" secondItem="dHp-A2-daJ" secondAttribute="leading" constant="10" id="Ai7-aB-SJh"/>
+                <constraint firstItem="9kJ-Hl-wbd" firstAttribute="top" secondItem="dHp-A2-daJ" secondAttribute="top" constant="10" id="PKL-92-KZv"/>
+            </constraints>
+            <size key="customSize" width="320" height="197"/>
+            <connections>
+                <outlet property="projectNameLabel" destination="K0D-Wv-zwt" id="9AY-Lu-rsF"/>
+                <outlet property="selectionView" destination="9kJ-Hl-wbd" id="wXV-b9-yFM"/>
+                <outlet property="tasksCountLabel" destination="6AI-mu-n9C" id="RWP-mt-Car"/>
+            </connections>
+            <point key="canvasLocation" x="-87" y="25.5"/>
+        </collectionViewCell>
+    </objects>
+</document>
